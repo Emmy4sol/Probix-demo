@@ -1,0 +1,126 @@
+/* Core Layout Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #03050a; /* Deep canvas dark blue */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.parallax-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; /* Essential for 3D depth perception */
+}
+
+.parallax-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Allows mouse clicks to pass through if needed */
+  transition: transform 0.1s ease-out; /* Smooths out jittery mouse adjustments */
+}
+
+/* Layer 1: Background Mesh styling */
+.network-grid-mock {
+  width: 90%;
+  height: 80%;
+  opacity: 0.15;
+  border: 1px dashed #00f2fe;
+  border-radius: 24px;
+  background-image: radial-gradient(rgba(0, 242, 254, 0.15) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* Layer 2: Midground Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.glass-p-icon {
+  font-size: 110px;
+  font-weight: 900;
+  color: #00f2fe;
+  /* Precisely 27-degree italicized slant skew */
+  transform: skewX(-27deg); 
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+  position: relative;
+}
+
+/* Floor Glow implementation below the P */
+.glass-p-icon::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 120px;
+  height: 15px;
+  background: radial-gradient(ellipse, #00f2fe 0%, transparent 70%);
+  filter: blur(5px);
+  transform: skewX(27deg); /* Inverts skew so floor glow sits flat */
+}
+
+.brand-name {
+  font-size: 72px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Layer 3: Foreground Floating Glass Cards styling */
+.glass-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  width: 240px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card-left {
+  left: 15%;
+  top: 25%;
+}
+
+.card-right {
+  right: 15%;
+  bottom: 25%;
+}
+
+.card-header {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.card-percentage {
+  font-size: 28px;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.yes-tag {
+  font-size: 14px;
+  background: rgba(34, 197, 94, 0.15);
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-left: 6px;
+}

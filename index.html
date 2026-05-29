@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probix • Naija</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(12px); }
+        .card-hover:hover { transform: translateY(-6px); }
+        .nav-active { background: #1e40af; color: white; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+<div class="flex h-screen overflow-hidden">
+    <!-- SIDEBAR -->
+    <div class="w-72 bg-black border-r border-zinc-800 flex flex-col">
+        <div class="p-6 flex items-center gap-3 border-b border-zinc-800">
+            <div class="w-14 h-14 rounded-3xl overflow-hidden bg-zinc-900 flex items-center justify-center">
+                <img src="IMG/Probix_logo_Image_2026.png" alt="Probix logo" class="w-full h-full object-cover">
+            </div>
+            <div class="text-4xl font-bold tracking-tighter">Probix</div>
+        </div>
+
+        <div class="p-4">
+            <input id="searchInput" type="text" placeholder="Search markets, politics, prices..." 
+                   class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl py-3 px-5 text-sm focus:border-blue-500 outline-none">
+        </div>
+
+        <nav class="flex-1 px-3 space-y-1 overflow-y-auto" id="sidebarNav">
+            <a href="#" onclick="navigateTo('home')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl nav-active">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="#" onclick="navigateTo('politics')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl hover:bg-zinc-900">
+                <i class="fa-solid fa-landmark"></i> Politics
+            </a>
+            <a href="#" onclick="navigateTo('sports')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl hover:bg-zinc-900">
+                <i class="fa-solid fa-futbol"></i> Sports
+            </a>
+            <a href="#" onclick="navigateTo('entertainment')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl hover:bg-zinc-900">
+                <i class="fa-solid fa-music"></i> Entertainment
+            </a>
+            <a href="#" onclick="navigateTo('economy')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl hover:bg-zinc-900">
+                <i class="fa-solid fa-cart-shopping"></i> Daily Prices
+            </a>
+            <a href="#" onclick="navigateTo('weather')" class="nav-link flex items-center gap-3 px-5 py-3 rounded-2xl hover:bg-zinc-900">
+                <i class="fa-solid fa-cloud-sun"></i> Weather Forecasts
+            </a>
+        </nav>
+
+        <div class="p-4 border-t border-zinc-800">
+            <div class="glass rounded-3xl p-4 text-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl"></div>
+                    <div>
+                        <div class="font-semibold">Emmy • 4pac_sol</div>
+                        <div class="text-emerald-400">82% Accuracy • 4.3k XP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN AREA -->
+    <div class="flex-1 overflow-auto" id="mainContent">
+        <!-- Content loaded via JS -->
+    </div>
+</div>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/framer-motion@12.6.8/dist/framer-motion.umd.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" data-presets="react" data-plugins="proposal-class-properties" src="src/components/HeroParallax.jsx"></script>
+<script type="text/babel" data-presets="react" src="src/hero-init.jsx"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
