@@ -1,0 +1,431 @@
+Email: 
+Password: Test@1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+└───Probix-demo
+    │   index.html
+    │   main.js
+    │   README2.md
+    │   rme1.txt
+    │   
+    ├───backend
+    │   │   .env
+    │   │   .env.example
+    │   │   package-lock.json
+    │   │   package.json
+    │   │   tsconfig.build.json
+    │   │   tsconfig.json
+    │   │   
+    │   ├───dist
+    │   │   │   index.d.ts
+    │   │   │   index.js
+    │   │   │   
+    │   │   ├───config
+    │   │   │       db.d.ts
+    │   │   │       db.js
+    │   │   │       index.d.ts
+    │   │   │       index.js
+    │   │   │       
+    │   │   ├───controllers
+    │   │   │       authController.d.ts
+    │   │   │       authController.js
+    │   │   │       forecastController.d.ts
+    │   │   │       forecastController.js
+    │   │   │       insightController.d.ts
+    │   │   │       insightController.js
+    │   │   │       leaderboardController.d.ts
+    │   │   │       leaderboardController.js
+    │   │   │       marketController.d.ts
+    │   │   │       marketController.js
+    │   │   │       sourceController.d.ts
+    │   │   │       sourceController.js
+    │   │   │       voteController.d.ts
+    │   │   │       voteController.js
+    │   │   │       watchlistController.d.ts
+    │   │   │       watchlistController.js
+    │   │   │       
+    │   │   ├───data
+    │   │   │       defaultCategories.d.ts
+    │   │   │       defaultCategories.js
+    │   │   │       
+    │   │   ├───middlewares
+    │   │   │       auditLogger.d.ts
+    │   │   │       auditLogger.js
+    │   │   │       auth.d.ts
+    │   │   │       auth.js
+    │   │   │       errorHandler.d.ts
+    │   │   │       errorHandler.js
+    │   │   │       rateLimiter.d.ts
+    │   │   │       rateLimiter.js
+    │   │   │       validate.d.ts
+    │   │   │       validate.js
+    │   │   │       
+    │   │   ├───models
+    │   │   │       AuditLog.d.ts
+    │   │   │       AuditLog.js
+    │   │   │       Category.d.ts
+    │   │   │       Category.js
+    │   │   │       Comment.d.ts
+    │   │   │       Comment.js
+    │   │   │       Forecast.d.ts
+    │   │   │       Forecast.js
+    │   │   │       ForecastVote.d.ts
+    │   │   │       ForecastVote.js
+    │   │   │       Market.d.ts
+    │   │   │       Market.js
+    │   │   │       MarketResolution.d.ts
+    │   │   │       MarketResolution.js
+    │   │   │       Notification.d.ts
+    │   │   │       Notification.js
+    │   │   │       RefreshToken.d.ts
+    │   │   │       RefreshToken.js
+    │   │   │       Source.d.ts
+    │   │   │       Source.js
+    │   │   │       User.d.ts
+    │   │   │       User.js
+    │   │   │       Watchlist.d.ts
+    │   │   │       Watchlist.js
+    │   │   │       
+    │   │   ├───routes
+    │   │   │       authRoutes.d.ts
+    │   │   │       authRoutes.js
+    │   │   │       forecastRoutes.d.ts
+    │   │   │       forecastRoutes.js
+    │   │   │       index.d.ts
+    │   │   │       index.js
+    │   │   │       insightRoutes.d.ts
+    │   │   │       insightRoutes.js
+    │   │   │       leaderboardRoutes.d.ts
+    │   │   │       leaderboardRoutes.js
+    │   │   │       marketRoutes.d.ts
+    │   │   │       marketRoutes.js
+    │   │   │       sourceRoutes.d.ts
+    │   │   │       sourceRoutes.js
+    │   │   │       voteRoutes.d.ts
+    │   │   │       voteRoutes.js
+    │   │   │       watchlistRoutes.d.ts
+    │   │   │       watchlistRoutes.js
+    │   │   │       
+    │   │   ├───scripts
+    │   │   │       seedCategories.d.ts
+    │   │   │       seedCategories.js
+    │   │   │       
+    │   │   ├───services
+    │   │   │       leaderboard.service.d.ts
+    │   │   │       leaderboard.service.js
+    │   │   │       passwordService.d.ts
+    │   │   │       passwordService.js
+    │   │   │       reputation.service.d.ts
+    │   │   │       reputation.service.js
+    │   │   │       tokenService.d.ts
+    │   │   │       tokenService.js
+    │   │   │       
+    │   │   ├───utils
+    │   │   │       apiResponse.d.ts
+    │   │   │       apiResponse.js
+    │   │   │       logger.d.ts
+    │   │   │       logger.js
+    │   │   │       
+    │   │   └───validators
+    │   │           authValidators.d.ts
+    │   │           authValidators.js
+    │   │           categoryValidators.d.ts
+    │   │           categoryValidators.js
+    │   │           forecastValidators.d.ts
+    │   │           forecastValidators.js
+    │   │           marketResolutionValidators.d.ts
+    │   │           marketResolutionValidators.js
+    │   │           marketValidators.d.ts
+    │   │           marketValidators.js
+    │   │           sourceValidators.d.ts
+    │   │           sourceValidators.js
+    │   │           voteValidators.d.ts
+    │   │           voteValidators.js
+    │   │           watchlistValidators.d.ts
+    │   │           watchlistValidators.js
+    │   │           
+    │   ├───src
+    │   │   │   index.ts
+    │   │   │   
+    │   │   ├───config
+    │   │   │       db.ts
+    │   │   │       index.ts
+    │   │   │       
+    │   │   ├───controllers
+    │   │   │       authController.ts
+    │   │   │       forecastController.ts
+    │   │   │       insightController.ts
+    │   │   │       leaderboardController.ts
+    │   │   │       marketController.ts
+    │   │   │       sourceController.ts
+    │   │   │       voteController.ts
+    │   │   │       watchlistController.ts
+    │   │   │       
+    │   │   ├───data
+    │   │   │       defaultCategories.ts
+    │   │   │       
+    │   │   ├───middlewares
+    │   │   │       auditLogger.ts
+    │   │   │       auth.ts
+    │   │   │       errorHandler.ts
+    │   │   │       rateLimiter.ts
+    │   │   │       validate.ts
+    │   │   │       
+    │   │   ├───models
+    │   │   │       AuditLog.ts
+    │   │   │       Category.ts
+    │   │   │       Comment.ts
+    │   │   │       Forecast.ts
+    │   │   │       ForecastVote.ts
+    │   │   │       Market.ts
+    │   │   │       MarketResolution.ts
+    │   │   │       Notification.ts
+    │   │   │       RefreshToken.ts
+    │   │   │       Source.ts
+    │   │   │       User.ts
+    │   │   │       Watchlist.ts
+    │   │   │       
+    │   │   ├───routes
+    │   │   │       authRoutes.ts
+    │   │   │       forecastRoutes.ts
+    │   │   │       index.ts
+    │   │   │       insightRoutes.ts
+    │   │   │       leaderboardRoutes.ts
+    │   │   │       marketRoutes.ts
+    │   │   │       sourceRoutes.ts
+    │   │   │       voteRoutes.ts
+    │   │   │       watchlistRoutes.ts
+    │   │   │       
+    │   │   ├───scripts
+    │   │   │       seedCategories.ts
+    │   │   │       seedMarkets.ts
+    │   │   │       
+    │   │   ├───services
+    │   │   │       leaderboard.service.ts
+    │   │   │       passwordService.ts
+    │   │   │       reputation.service.ts
+    │   │   │       tokenService.ts
+    │   │   │       
+    │   │   ├───utils
+    │   │   │       apiResponse.ts
+    │   │   │       logger.ts
+    │   │   │       
+    │   │   └───validators
+    │   │           authValidators.ts
+    │   │           categoryValidators.ts
+    │   │           forecastValidators.ts
+    │   │           marketResolutionValidators.ts
+    │   │           marketValidators.ts
+    │   │           sourceValidators.ts
+    │   │           voteValidators.ts
+    │   │           watchlistValidators.ts
+    │   │           
+    │   └───tests
+    │       └───scripts
+    │               inspectAtlas.js
+    │               
+    ├───deployment
+    │       Dockerfile.backend
+    │       Dockerfile.frontend
+    │       
+    ├───DOCS
+    │       ATLAS_SETUP.md
+    │       README.md
+    │       rme0.docx
+    │       sentry.md
+    │       
+    ├───frontend
+    │   │   .env
+    │   │   .env.example
+    │   │   index.html
+    │   │   package-lock.json
+    │   │   package.json
+    │   │   postcss.config.js
+    │   │   tailwind.config.js
+    │   │   tsconfig.json
+    │   │   tsconfig.node.json
+    │   │   vite.config.ts
+    │   │   
+    │   ├───dist
+    │   │   │   index.html
+    │   │   │   
+    │   │   ├───assets
+    │   │   │       index-Cvq79ucC.js
+    │   │   │       index-Hvm7mi5N.css
+    │   │   │       
+    │   │   └───IMG
+    │   │           probixlogo.png
+    │   │           Probix_logo_Image_2026.png
+    │   │           
+    │   ├───public
+    │   │   └───IMG
+    │   │           probixlogo.png
+    │   │           Probix_logo_Image_2026.png
+    │   │           
+    │   └───src
+    │       │   App.tsx
+    │       │   index.css
+    │       │   main.tsx
+    │       │   
+    │       ├───app
+    │       │       hooks.ts
+    │       │       store.ts
+    │       │       
+    │       ├───components
+    │       │       CategoryHero.tsx
+    │       │       EmptyState.tsx
+    │       │       ForecastCard.tsx
+    │       │       HeroParallax.tsx
+    │       │       Layout.tsx
+    │       │       LoadingState.tsx
+    │       │       MarketGrid.tsx
+    │       │       MarketTabs.tsx
+    │       │       ProtectedRoute.tsx
+    │       │       
+    │       ├───data
+    │       │       categories.ts
+    │       │       
+    │       ├───features
+    │       │   └───auth
+    │       │           AuthInitializer.tsx
+    │       │           authSlice.ts
+    │       │           
+    │       ├───pages
+    │       │       AfricaPage.tsx
+    │       │       EconomyPage.tsx
+    │       │       EntertainmentPage.tsx
+    │       │       ForgotPasswordPage.tsx
+    │       │       GlobalPage.tsx
+    │       │       HomePage.tsx
+    │       │       HowItWorksPage.tsx
+    │       │       InsightsPage.tsx
+    │       │       LeaderboardPage.tsx
+    │       │       LoginPage.tsx
+    │       │       MarketPage.tsx
+    │       │       MarketsPage.tsx
+    │       │       NigeriaPage.tsx
+    │       │       NotFoundPage.tsx
+    │       │       PoliticsPage.tsx
+    │       │       ProfilePage.tsx
+    │       │       RegisterPage.tsx
+    │       │       SportsPage.tsx
+    │       │       StartupsPage.tsx
+    │       │       TechnologyPage.tsx
+    │       │       TrendingPage.tsx
+    │       │       WatchlistPage.tsx
+    │       │       WeatherPage.tsx
+    │       │       
+    │       ├───services
+    │       │       api.ts
+    │       │       forecast.ts
+    │       │       leaderboard.ts
+    │       │       market.ts
+    │       │       watchlist.ts
+    │       │       
+    │       └───types
+    │               index.ts
+    │               
+    ├───IMG
+    │       probixlogo.png
+    │       Probix_logo_Image_2026.png
+    │       
+    └───src
+        │   hero-init.jsx
+        │   
+        └───components
+                HeroParallax.jsx
+                
